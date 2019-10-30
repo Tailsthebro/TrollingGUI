@@ -1,0 +1,46 @@
+# TROLLING GUI
+# BY:Tails the bro
+#terms
+#I will not reupload this code as my own
+#any code change will be added as an addon if you want to upload it
+#this code belongs to Tails The Bro and I will not claim it as my own
+#i will have a small shoutout on my server to Tails The Bros Youtube Channel
+#any permission added will have ttb.trolling in the it
+#Tails The bro can change the terms at any time and can force you to take the skript off of your 
+#server at any time if the terms are not being followed
+#DM Tails The Bro#7313 on discord for help or for a custom skript code.
+#My server ip for the skript: nukekitpvp.minehut.gg
+
+
+
+
+
+
+
+command /trollall:
+	permission: ttb.admin.trollingall
+	trigger:
+		open chest with 4 rows named "&6Trolling" to player
+		format slot 13 of player with blaze rod named "&6Smite all" to close then run [execute console command "smite **"]
+		format slot 20 of player with iron sword named "&2Random kill" to close then run [execute console command "minecraft:kill @r"]
+		format slot 24 of player with ender pearl named "&2Random tp" to close then run [make player execute command "/minecraft:teleport @s @r"]
+		format slot 2 of player with wooden sword named "&8Darknees" to close then run [make player execute command "/minecraft:teleport @r -680.31 209.00 289.69"]
+		format slot 5 of player with arrow named "&fGLEEM" to close then run [make player execute command "/minecraft:tp @r -673.074 208 119.836"]
+		format slot 9 of player with arrow named "&5Thanos" to close then run [make player execute command "/title @a title ["",{"text":"YOU SHOULD HAVE AIMED FOR THE HEAD ","bold":true,"italic":true,"color":"dark_red"},{"selector":"@s","bold":true,"italic":true,"color":"dark_red"},{"text":" Everyone will be dusted in 5 ticks"}]"]
+
+
+
+command /troll <player>:
+	permission: ttb.admin.trolling
+	trigger:
+     arg 1 has permission "ttb.trolling.not":
+     send player "YOU CANT TROLL A STAFF MEMBER"
+stop
+       else:
+		open chest with 4 rows named "&6Trolling %arg 1%" to player
+		format slot 13 of player with blaze rod named "&6Smite %arg 1%" to close then run [execute console command "smite %arg 1%"]
+		format slot 20 of player with iron sword named "&2kill %arg 1%" to close then run [execute console command "kill %arg 1%"]
+		format slot 24 of player with ender pearl named "&2tp %arg 1%" to close then run [make player execute command "/tp %arg 1%"]
+		format slot 2 of player with wooden sword named "&8Darknees" to close then run [make player execute command "/minecraft:teleport %arg 1% -680.31 209.00 289.69"]
+		format slot 5 of player with arrow named "&fGLEEM %arg 1%" to close then run [make player execute command "/tp %arg 1% -673.074 208 119.836"]
+		format slot 6 of player with enchanted book named "&2fake kick %arg 1%" to close then run [make console execute command "/kick %arg 1% fly -s"]
